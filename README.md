@@ -33,9 +33,8 @@ A full-stack Virtual Art Gallery web application built using the MERN stack wher
 - Express.js
 
 --
-## Author 
-<b> Shivani Mourya </b>
+## 👩‍💻 Author
 
----
+Shivani Mourya
 
 ## 📁 Project Structure

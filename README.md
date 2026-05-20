@@ -31,8 +31,10 @@ A full-stack Virtual Art Gallery web application built using the MERN stack wher
 **Backend:**
 - Node.js
 - Express.js
-**Database:**
-- MongoDB
+
+--
+## Author 
+<b> Shivani Mourya </b>
 
 ---
 

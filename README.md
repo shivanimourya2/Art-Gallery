@@ -28,9 +28,11 @@ A full-stack Virtual Art Gallery web application built using the MERN stack wher
 
 **Frontend:**
 - React.js
+- <br>
 **Backend:**
 - Node.js
 - Express.js
+- MongoDB
 
 --
 ## 👩‍💻 Author

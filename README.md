@@ -1,45 +1,71 @@
 # 🎨 Virtual Art Gallery
 
-A full-stack Virtual Art Gallery web application built using the MERN stack where artists can upload their artworks, curators can approve them, and visitors can explore and view art.
+A full-stack **Virtual Art Gallery web application** built with the **MERN stack**, designed to connect artists, curators, and art enthusiasts in a digital gallery experience.
+
+Artists can upload and manage their artworks, curators/admins can review and manage submissions, and visitors can explore and view artwork through the gallery.
 
 ---
 
 ## 🚀 Features
 
-- 👩‍🎨 Artist Panel
-  - Upload artworks
-  - Manage profile
-  - View uploaded items
+### 👩‍🎨 Artist Panel
 
-- 🧑‍💼 Curator/Admin Panel
-  - Approve or reject artworks
-  - Manage artists and content
+* Upload artworks
+* Manage artist profile
+* View uploaded artworks
+* Manage submitted artwork
 
-- 👀 Visitor View
-  - Browse artworks
-  - View artwork details
+### 🧑‍💼 Curator / Admin Panel
 
-- 🔐 Authentication
-  - Login / Signup system
+* Review submitted artworks
+* Approve or reject artworks
+* Manage artists
+* Manage gallery content
+
+### 👀 Visitor View
+
+* Browse available artworks
+* Explore the virtual gallery
+* View artwork details
+* Discover different artists
+
+### 🔐 Authentication
+
+* User registration
+* Login system
+* Role-based access
+* Protected user areas
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend:**
-- React.js
-- <br>
-**Backend:**
-- Node.js
-- Express.js
-- MongoDB
+### Frontend
 
---
-## 👩‍💻 Author
+* **React.js**
+* **Vite**
+* **JavaScript**
+* **HTML5**
+* **CSS3**
 
-Shivani Mourya
+### Backend
+
+* **Node.js**
+* **Express.js**
+* **MongoDB**
+* **Mongoose**
+
+### Tools
+
+* **Git & GitHub**
+* **VS Code**
+* **npm**
+
+---
 
 ## 📁 Project Structure
+
+```text
 Art-Gallery/
 │
 ├── backend/
@@ -67,112 +93,221 @@ Art-Gallery/
 ├── package-lock.json
 ├── vite.config.js
 └── README.md
+```
 
-##⚙️ Getting Started
+---
 
-Follow these steps to run the project locally.
+## ⚙️ Getting Started
 
-1. Clone the Repository
+Follow the steps below to run the project locally.
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/shivanimourya2/Art-Gallery.git
+```
 
 Navigate into the project:
 
+```bash
 cd Art-Gallery
-##💻 Frontend Setup
+```
 
-Open a terminal inside the project root.
+---
 
-Install the frontend dependencies:
+## 💻 Frontend Setup
 
+Install the required dependencies:
+
+```bash
 npm install
+```
 
 Start the Vite development server:
 
+```bash
 npm run dev
+```
 
-The frontend will be available at the local URL shown by Vite, usually:
+The frontend will be available at the local URL provided by Vite, usually:
 
+```text
 http://localhost:5173
+```
 
-The current frontend configuration uses Vite and provides dev, build, lint, and preview scripts.
+### Available Frontend Scripts
 
-🖥️ Backend Setup
+```bash
+npm run dev       # Start development server
+npm run build     # Build the application for production
+npm run preview   # Preview the production build
+npm run lint      # Run ESLint
+```
 
-Open a second terminal.
+---
 
-Navigate to the backend directory:
+## 🖥️ Backend Setup
 
+Open a **second terminal** and navigate to the backend:
+
+```bash
 cd backend
+```
 
 Install backend dependencies:
 
+```bash
 npm install
+```
 
-Start the backend server using the project's configured start command.
+Start the backend server using the configured development command:
 
-For development, this may be:
-
+```bash
 npm run dev
+```
 
-or, depending on the backend configuration:
+If the project uses a standard start script instead:
 
+```bash
 npm start
-##🗄️ MongoDB Setup
+```
 
-The project uses MongoDB as its database.
+---
+
+## 🗄️ MongoDB Setup
+
+The application uses **MongoDB** for data storage.
 
 You can use either:
 
-MongoDB Community Server locally
-MongoDB Atlas
+* MongoDB Community Server
+* MongoDB Atlas
 
 Make sure your MongoDB connection string is configured in the backend environment variables.
 
-Example:
+---
 
-MONGO_URI=your_mongodb_connection_string
-PORT=5000
-🔐 Environment Variables
+## 🔐 Environment Variables
 
-Create a .env file inside the backend directory.
+Create a `.env` file inside the `backend` directory.
 
 Example:
 
+```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+```
 
-##🧪 Running the Project
+### Environment Variables
 
-For local development, you generally need two terminals:
+| Variable     | Description                        |
+| ------------ | ---------------------------------- |
+| `PORT`       | Port used by the backend server    |
+| `MONGO_URI`  | MongoDB connection string          |
+| `JWT_SECRET` | Secret key used for authentication |
 
-Terminal 1 — Frontend
+> ⚠️ Never commit your `.env` file or other sensitive credentials to GitHub.
+
+---
+
+## 🧪 Running the Project
+
+For local development, run the frontend and backend in **separate terminals**.
+
+### Terminal 1 — Frontend
+
+```bash
 cd Art-Gallery
 npm install
 npm run dev
-Terminal 2 — Backend
+```
+
+### Terminal 2 — Backend
+
+```bash
 cd Art-Gallery/backend
 npm install
 npm run dev
+```
 
-Make sure MongoDB is available and the backend .env file is configured before using features that require database access.
+Make sure MongoDB is running and the backend `.env` file is properly configured.
 
-##🤝 Contributing
+---
+
+## 🔄 Application Workflow
+
+```text
+Artist
+   │
+   ▼
+Upload Artwork
+   │
+   ▼
+Curator/Admin Review
+   │
+   ├── Approve ──► Public Gallery
+   │
+   └── Reject
+```
+
+Visitors can browse the artworks available in the public gallery and view their details.
+
+---
+
+## 🤝 Contributing
 
 Contributions are welcome!
 
-If you would like to contribute:
+To contribute:
 
-Fork the repository
-Create a new branch
+### 1. Fork the repository
+
+Create your own fork of the project.
+
+### 2. Create a new branch
+
+```bash
 git checkout -b feature/your-feature
-Make your changes
-Commit your changes
+```
+
+### 3. Make your changes
+
+Implement your feature or fix.
+
+### 4. Commit your changes
+
+```bash
+git add .
 git commit -m "Add your feature"
-Push the branch
+```
+
+### 5. Push your branch
+
+```bash
 git push origin feature/your-feature
-Open a Pull Request
+```
 
-##👩‍💻 Author
+### 6. Open a Pull Request
 
-Shivani Mourya
+Create a Pull Request from your branch to the main repository.
+
+---
+
+## 👩‍💻 Author
+
+**Shivani Mourya**
+
+[GitHub](https://github.com/shivanimourya2)
+
+---
+
+## ⭐ Support
+
+If you found this project useful or interesting, consider giving the repository a ⭐ on GitHub.
+
+---
+
+### 🎨 Virtual Art Gallery
+
+**Explore. Create. Curate. Experience Art Digitally.**

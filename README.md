@@ -43,10 +43,6 @@ Artists can upload and manage their artworks, curators/admins can review and man
 ### Frontend
 
 * **React.js**
-* **Vite**
-* **JavaScript**
-* **HTML5**
-* **CSS3**
 
 ### Backend
 
@@ -54,14 +50,6 @@ Artists can upload and manage their artworks, curators/admins can review and man
 * **Express.js**
 * **MongoDB**
 * **Mongoose**
-
-### Tools
-
-* **Git & GitHub**
-* **VS Code**
-* **npm**
-
----
 
 ## 📁 Project Structure
 

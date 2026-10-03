@@ -286,16 +286,4 @@ Create a Pull Request from your branch to the main repository.
 
 **Shivani Mourya**
 
-[GitHub](https://github.com/shivanimourya2)
-
 ---
-
-## ⭐ Support
-
-If you found this project useful or interesting, consider giving the repository a ⭐ on GitHub.
-
----
-
-### 🎨 Virtual Art Gallery
-
-**Explore. Create. Curate. Experience Art Digitally.**

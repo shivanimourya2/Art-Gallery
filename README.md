@@ -243,44 +243,6 @@ Visitors can browse the artworks available in the public gallery and view their 
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome!
-
-To contribute:
-
-### 1. Fork the repository
-
-Create your own fork of the project.
-
-### 2. Create a new branch
-
-```bash
-git checkout -b feature/your-feature
-```
-
-### 3. Make your changes
-
-Implement your feature or fix.
-
-### 4. Commit your changes
-
-```bash
-git add .
-git commit -m "Add your feature"
-```
-
-### 5. Push your branch
-
-```bash
-git push origin feature/your-feature
-```
-
-### 6. Open a Pull Request
-
-Create a Pull Request from your branch to the main repository.
-
----
 
 ## 👩‍💻 Author
 
